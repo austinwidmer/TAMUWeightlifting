@@ -9,6 +9,7 @@
   --bs-light-primary: #500000;
   --bs-dark-primary: #500000;
   --bs-light-secondary: #0d0d0e4c;
+  --bs-section-background-bolor: #500000;
 }
 
 * {
@@ -22,6 +23,7 @@ body {
   font-size: 1rem;
   color: var(--bs-secondary-color);
   scroll-behavior: smooth;
+  background-color: #000000;
 }
 
 body::-webkit-scrollbar {
@@ -96,7 +98,7 @@ p {
 }
 
 ul {
-  list-style-type: none;
+  /* list-style-type: none; */
 }
 
 .text-primary {
@@ -219,8 +221,11 @@ ul {
 }
 
 .section-bg {
-  background-color: var(--bs-light-primary);
+  background-color: var(--bs-section-background-bolor);
+  color: var(--bs-text-primary-color);
 }
+
+.section-primary
 
 .bg-primary {
   background-color: var(--bs-primary-color) !important;
