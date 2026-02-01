@@ -6,6 +6,8 @@
   --bs-secondary-color: #a7a7a7;
   --bs-text-primary-color: #f1f1f1;
   --bs-text-secondary-color: #d7d7d7;
+  --aggie-maroon: #500000;
+  --aggie-lighter-maroon: #732f2f;
   --bs-light-primary: #500000;
   --bs-dark-primary: #500000;
   --bs-light-secondary: #0d0d0e4c;
@@ -13,7 +15,7 @@
 }
 
 * {
-  user-select: none;
+  user-select: auto;
 }
 
 body {
@@ -86,6 +88,7 @@ hr:not([size]) {
 
 a {
   text-decoration: none !important;
+  color: #6db3f2 !important;
 }
 
 p {
@@ -117,7 +120,13 @@ ul {
   color: var(--bs-secondary-color) !important;
 }
 
+.text-aggie-maroon {
+  color: var(--aggie-maroon) !important;
+}
 
+.text-aggie-lighter-maroon {
+  color: var(--aggie-lighter-maroon) !important;
+}
 
 .navbar {
   padding: 0.25rem 0;
@@ -131,13 +140,37 @@ ul {
   transition: color 0.3s ease, letter-spacing 0.3s ease;
 }
 
+.donate-page .nav-link {
+  color: #000000 !important;
+}
+
+.contactus-page .nav-link {
+  color: #000000 !important;
+}
+
 .nav-item .active {
   color: var(--bs-text-primary-color) !important;
+}
+
+.donate-page .nav-item .active {
+  color: #000000 !important;
+}
+
+.contactus-page .nav-item .active {
+  color: #000000 !important;
 }
 
 .nav-link:hover {
   color: var(--bs-text-primary-color) !important;
   letter-spacing: 1px;
+}
+
+.donate-page .nav-link:hover {
+  color: #000000 !important;
+}
+
+.contactus-page .nav-link:hover {
+  color: #000000 !important;
 }
 
 .theme-cta .arrow-icon {
@@ -207,9 +240,24 @@ ul {
   top: 0;
   width: 100%;
   height: 100vh;
-  background-image: url('../assets/imgs/main-banner.png');
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.home-page #hero-section-banner {
+  background-image: url('../assets/imgs/main-banner.png');
+}
+
+.team-page #hero-section-banner {
+  background-image: url('../assets/imgs/about-us-1.jpeg');
+}
+
+.donate-page #hero-section-banner {
+  background-image: url('../assets/imgs/donate.jpeg');
+}
+
+.contactus-page #hero-section-banner {
+  background-image: url('../assets/imgs/Charles2.jpeg');
 }
 
 #hero-section {
@@ -220,9 +268,26 @@ ul {
   background-repeat: no-repeat;
 }
 
+#quick-link {
+  background-color: #f5f5f5;
+}
+
+#counter-section {
+  background-color: #f5f5f5;
+}
+
 .section-bg {
   background-color: var(--bs-section-background-bolor);
   color: var(--bs-text-primary-color);
+}
+
+.team-page #coaches-officers {
+  background-color: #f5f5f5;
+  color: var(--bs-secondary-color);
+}
+
+.team-page #coaches-officers p {
+  color: #000000;
 }
 
 .section-primary
